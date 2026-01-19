@@ -1,0 +1,108 @@
+/* Глобальный сброс */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+}
+
+/* Навигационная панель */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #008cfa;
+  color: white;
+}
+
+
+.nav-item {
+  font-size: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-item a {
+  display: block;
+  padding: 7px 15px;
+}
+
+.nav-item:hover {
+  background-color: #0064be;
+  transition: 0.3s;
+}
+
+/* Основной контент страницы */
+.text-block {
+  margin-left: 15%;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.welcome {
+  font-size: 70px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.welcome-text {
+  font-size: 20px;
+  color: #555;
+}
+
+.c-btn {
+  margin-top: 15px;
+  width: 180px;
+  height: 40px;
+  background-color: #0064be;
+  border: none;
+  border-radius:5px;
+  cursor: pointer;
+}
+
+.catalog {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+@media (max-width: 1000px) {
+
+
+.nav-item {
+  font-size: 0.8rem;
+  padding: 7px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+  display: flex;
+  justify-content: center;
+
+}
+  .text-block {
+  margin-left: 15%;
+  margin-top: 80px;
+  text-align: center; 
+}
+
+
+  .welcome {
+      font-size: 2.5rem; 
+  }
+}
+

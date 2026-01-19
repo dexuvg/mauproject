@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача</title>
+    <link rel="stylesheet" href="check.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css" integrity="sha384-Pu5+C18nP5dwykLJOhd2U4Xen7rjScHN/qusop27hdd2drI+lL5KvX7YntvT8yew" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.js" integrity="sha384-2B8pfmZZ6JlVoScJm/5hQfNS2TI/6hPqDZInzzPc8oHpN5SgeNOf4LzREO6p5YtZ" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+</head>
+<body>
+
+    <div class="parent-container">
+        <div class="quiz-container">
+            <p class="question-text">
+           В правильной четырёхугольной призме \( ABCDA_1B_1C_1D_1 \) сторона основания равна 2, а боковое ребро равно 1. Найдите угол между прямыми \( AA_1 \) и \( BD_1 \).
+            </p>
+        <div class="navigation">
+            <img src="logo_mau.png">
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a href="index.html">Главная страница</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catalogpage.html">Каталог задач</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="options" id="options-list">
+                <!-- Обратите внимание, что атрибут onchange мы убираем из HTML, 
+                чтобы добавить обработчики через JS, это более чистый подход -->
+                <label data-value="a">
+                    <input type="checkbox" name="q1" value="a">
+                    <p>$$\arcsin\left(\frac{2}{\sqrt3}\right)$$</p>
+ <span class="feedback-icon"></span>
+                </label>
+                <label data-value="b">
+                    <input type="checkbox" name="q1" value="b">
+                    $${\pi}$$ <span class="feedback-icon"></span>
+                </label>
+                <label data-value="c">
+                    <input type="checkbox" name="q1" value="c">
+                   $$\arccos\left(\frac{1}{3}\right)$$ <span class="feedback-icon"></span>
+                </label>
+                <label data-value="d">
+                    <input type="checkbox" name="q1" value="d">
+                    $$\arccos\left(\frac{\sqrt3}{2}\right)$$<span class="feedback-icon"></span>
+                </label>
+            </div>
+            
+            <div class="result-message" id="result-message">
+                <span id="result-text"></span>
+                <!-- Кнопка "Посмотреть решение" (изначально скрыта) -->
+                <button id="show-solution-btn" style="display: none;"><a>Посмотреть решение</a></button>
+            </div>
+    
+            <!-- Блок с решением (изначально скрыт) -->
+            <div class="solution-text" id="solution-text">
+                Правильный ответ — $$\arccos\left(\frac{1}{3}\right)$$.
+            </div>
+        </div>
+    <div class="btns">
+        <button class="click"><a href="1.3q.html">Cледующее задание</a></button>
+    </div>
+        
+    </div>
+    <script src="check3.js"></script>
+
+</body>
+</html>
