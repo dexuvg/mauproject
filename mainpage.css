@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 62,5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.04rem;
+  transition: text-decoration 0.3s;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #008cfa;
+  color: rgb(255, 255, 255);
+}
+
+img{
+  max-width: 100%;
+  max-height: auto;
+  margin: 1.44rem 1.44rem 0.72rem 0rem;
+  padding-left: 1.6rem;
+}
+
+.nav-item {
+  font-size: 1.7rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-item a {
+  display: block;
+  padding: 0.784rem 1.68rem;
+}
+
+.nav-item:hover {
+  background-color: #0064be;
+  transition: 0.3s;
+}
+
+/* Основной контент страницы */
+.text-block {
+  margin-left: 15%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.welcome {
+  font-size: 5rem;
+  color: #333;
+  margin-bottom: 1%;
+}
+
+.welcome-text {
+  font-size: 2.4rem;
+  color: #555;
+}
+
+button {
+  margin-top: 1.1%;
+  width: 11rem;
+  height: 2.8rem;
+  background-color: #0064be;
+  border: none;
+  border-radius:1rem;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #01427a;
+  transition: 0.2s;
+}
+
+/* Медиа-запросы*/
+/* @media (max-width: 1007px) {
+  
+  nav {
+    height: 100%;
+    width: 19%;
+  }
+  img{
+    max-width: 90%;
+  }
+  
+  .nav-item {
+    font-size: 1.2rem;
+    border-bottom: 0.04rem solid rgba(255, 255, 255, 0.3);
+  }
+
+  .welcome {
+  font-size: 4.3rem;
+}
+
+.welcome-text {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+button {
+  width: 9.718rem;
+  height: 2.064rem;
+
+}
+
+}
+*\\
+@media (max-width: 768px) {
+}
+
+

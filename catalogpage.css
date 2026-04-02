@@ -1,0 +1,108 @@
+/* Глобальный сброс */
+html {
+  scroll-behavior: smooth;
+  font-size: 62, 5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(28, 28, 28);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.04rem;
+  transition: text-decoration 0.3s;
+}
+
+/* Навигационная панель */
+nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #008cfa;
+  color: white;
+}
+
+img{
+  max-width: 100%;
+  max-height: auto;
+  margin: 1.44rem 1.44rem 0.72rem 0rem;
+  padding-left: 1.6rem;
+}
+
+.nav-item {
+  font-size: 1.7rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-item a {
+  display: block;
+  padding: 0.784rem 1.68rem;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: #0064be;
+  transition: 0.3s;
+}
+
+/*Основной текст страницы*/
+.text-block {
+  margin-left: 15%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.header {
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 2%;
+}
+
+.list {
+  margin-left: 24%;
+  margin-top: 3%;
+  color: #424242;
+  font-size: 1.5rem;
+}
+
+.list > ul > li {
+  font-weight: bold;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+.under li a {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+.under {
+  margin-left: 3%;
+}
+
+@media (max-width: 1000px) {
+  .nav-item {
+    font-size: 0.8rem;
+    padding: 7px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-block {
+    margin-left: 15%;
+    margin-top: 80px;
+    text-align: center;
+  }
+}
